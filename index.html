@@ -3,35 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>计算机网络实验一：静态网页制作</title>
+    <title>王炯的个人主页 | 计算机网络实验一</title>
 
-    <!-- 引用外部样式表 -->
+    <!-- 外部样式表：请将 style.css 放入 css 文件夹 -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header class="site-header">
-        <h1>计算机网络实验一</h1>
-        <p>静态网页制作</p>
+        <h1>王炯的个人主页</h1>
+        <p>计算机网络实验一 · 静态网页制作</p>
     </header>
 
     <nav class="navbar">
-        <a href="#intro">实验简介</a>
+        <a href="#intro">自我简介</a>
+        <a href="#hometown">家乡简介</a>
+        <a href="#study">学习分享</a>
         <a href="#knowledge">知识结构</a>
-        <a href="#schedule">实验安排</a>
+        <a href="#gallery">推荐链接</a>
         <a href="#contact">联系信息</a>
     </nav>
 
     <main class="container">
 
+        <!-- 自我简介 -->
         <section id="intro">
-            <h2>实验简介</h2>
+            <h2>自我简介</h2>
+            <div class="profile">
+                <img src="images/e1be5c291e9f111aafbda9ff818939cf.jpg"个人头像" class="avatar">
+                <div>
+                    <p>大家好，我是王炯，学号 PB24111605。</p>
+                    <p>
+                        目前正在学习计算机网络、Web 开发与 HTML/CSS 基础。
+                        希望通过本次实验掌握静态网页制作、HTTP 协议和 GitHub Pages 部署。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 城市简介 -->
+        <section id="hometown">
+            <h2>城市简介</h2>
             <p>
-                本实验学习 HTML 页面结构、HTML 常用标记、
-                表格布局以及 CSS 样式表的基本使用方法。
+                我在安徽。这里既有黄山、九华山等自然风光，
+                也有徽派建筑、黄梅戏等人文景观。
+                合肥作为安徽省会，近年来在科技创新方面发展迅速。
+            </p>
+            <p>
+                欢迎访问
+                <a href="https://www.ah.gov.cn/" target="_blank" rel="noopener">
+                    安徽省人民政府
+                </a>
+                了解更多。
             </p>
         </section>
 
+        <!-- 学习分享 -->
+        <section id="study">
+            <h2>学习分享</h2>
+            <p>
+                在学习 HTML 与 CSS 的过程中，我体会到：
+                结构与样式分离可以让网页更易维护；
+                使用语义化标签有助于 SEO 和无障碍访问；
+                通过浏览器开发者工具可以方便地调试页面和查看 HTTP 版本。
+            </p>
+            <ul>
+                <li>HTML 负责页面结构</li>
+                <li>CSS 负责页面样式</li>
+                <li>JavaScript 负责页面交互</li>
+            </ul>
+        </section>
+
+        <!-- 知识结构表格 -->
         <section id="knowledge">
             <h2>知识结构</h2>
 
@@ -68,6 +111,7 @@
             </table>
         </section>
 
+        <!-- 实验安排 -->
         <section id="schedule">
             <h2>实验安排</h2>
             <ol>
@@ -80,32 +124,47 @@
             </ol>
         </section>
 
-        <section class="card">
-            <h2>相关链接</h2>
-            <p>
-                <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML"
-                   target="_blank">
-                    MDN HTML 教程
+        <!-- 三个超链接并包含图片：必做 -->
+        <section id="gallery">
+            <h2>推荐链接</h2>
+            <p>以下三个链接均为超链接，并且每个链接都包含图片，满足实验必做要求。</p>
+
+            <div class="gallery">
+                <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener" class="gallery-item">
+                    <img src="images/ustc.jpg" alt="中国科学技术大学">
+                    <span>中国科学技术大学</span>
                 </a>
-            </p>
-            <p>
-                <a href="https://www.w3school.com.cn/html/index.asp"
-                   target="_blank">
-                    W3School HTML 教程
+
+                <a href="https://www.huawei.com/cn/" target="_blank" rel="noopener" class="gallery-item">
+                    <img src="images/huawei.jpg" alt="华为官网">
+                    <span>华为官网</span>
                 </a>
-            </p>
+
+                <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener" class="gallery-item">
+                    <img src="images/mdn.png" alt="MDN HTML 教程">
+                    <span>MDN HTML 教程</span>
+                </a>
+            </div>
         </section>
 
+        <!-- 联系信息 -->
         <section id="contact">
             <h2>联系信息</h2>
             <p>姓名：王炯</p>
             <p>学号：PB24111605</p>
+            <p>
+                个人主页：
+                <a href="https://your-username.github.io/" target="_blank" rel="noopener">
+                    https://your-username.github.io/
+                </a>
+            </p>
+            <p>HTTP 版本号： h2 </p>
         </section>
 
     </main>
 
     <footer>
-        <p>计算机网络实验一 © 2026</p>
+        <p>计算机网络实验一 © 2026 王炯</p>
     </footer>
 
 </body>

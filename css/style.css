@@ -64,6 +64,23 @@ h2 {
     padding-left: 12px;
 }
 
+.profile {
+    display: flex;          
+    align-items: center;    
+    gap: 24px;            
+}
+
+/* 头像尺寸控制 */
+.avatar {
+    width: 140px;           
+    height: 140px;          
+    object-fit: cover;    
+    border-radius: 50%;     
+    flex-shrink: 0;         
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -96,6 +113,7 @@ footer {
     background-color: #263238;
 }
 
+/* ===== 移动端适配 ===== */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -111,5 +129,16 @@ footer {
     td {
         padding: 8px 4px;
         font-size: 14px;
+    }
+
+    /* 自我简介：竖排显示，头像缩小 */
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
     }
 }
